@@ -4,12 +4,13 @@ import Header from './components/Header';
 import GlobalStyles from './components/styles/Globals';
 import Card from './components/Card';
 import content from './content';
+import Footer from './components/Footer';
 
 const theme = {
   colors: {
     header: ' #ebfbff ',
     body: ' #fff ',
-    footer: ' # 003333 ',
+    footer: '#003333',
   },
   mobile: '768px',
 };
@@ -24,6 +25,7 @@ function App() {
             <Card item={item} key={idx} />
           ))}
         </Container>
+        <Footer />
       </>
     </ThemeProvider>
   );
